@@ -1,0 +1,118 @@
+@media (max-width:960px) {
+    section {
+        #check {
+            &:checked + header .navigation {
+
+                z-index: 2;
+                position: fixed;
+                background: rgba(53, 104, 40, 0.9);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                a{
+                   font-weight:700 ;
+                   margin-right: 0;
+                   margin-bottom: 50px;
+                   letter-spacing: 2px;
+                }
+
+
+
+
+
+
+            }
+            &:checked + header label{
+                .menu-btn{
+                    display: none;
+                }
+                .close-btn{
+                    z-index: 2;
+                    display: block;
+                    position: fixed;
+                }
+            }
+        }
+
+        header {
+
+            .navigation {
+                display: none;
+            }
+            .logo{
+                position:absolute ;
+                bottom: -6px;
+            }
+
+            label {
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
+                transition: 0.3s;
+                .menu-btn{
+                    position: absolute;
+                }
+
+                &:hover {
+                    color: #fff;
+
+                }
+
+                .close-btn {
+                    display: none;
+                }
+            }
+        }
+        .content{
+            .info{
+                p{
+                    font-size: 14px;
+                }
+                h2{
+                    font-size: 45px;
+                    line-height: 50px;
+
+                    span{
+                        font-size: 40px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:560px){
+   section{
+
+
+    
+
+    
+
+.content{
+    .info{
+        h2{
+            font-size: 35px;
+            line-height: 40px;
+            span{
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        
+        
+        
+    }
+}
+
+   } 
+}
